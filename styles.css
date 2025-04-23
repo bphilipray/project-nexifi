@@ -1,0 +1,133 @@
+.hero-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.0625rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.features-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.hero-section {
+    position: relative;
+    background: url('assets/flares.png') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #6D52FD 0%, #F13A8A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+
+.button-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 1000px;
+    background: #6D51FD;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.download-container {
+    position: relative;
+    display: inline-block;
+}
+
+.download-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 1000px;
+    background: #9666ff;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 1000px;
+    background: linear-gradient(180deg, #de43a3 0%, #FFFFFF 100%);
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.fs-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.multiple-income-section {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background: url(assets/multiple-income-highlights.png) no-repeat left center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.multiple-income-content {
+    max-width: 40%;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.cs-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cs-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* .compatibility-section {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background: url(assets/compatibilty-animated-images.png) no-repeat right center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+} */
