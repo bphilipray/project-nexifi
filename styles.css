@@ -37,11 +37,6 @@
       margin-left: 0;
       margin-bottom: 1rem;
     }
-  
-    .download-container {
-      text-align: right;
-      margin-top: 1rem;
-    }
   }
 
 .hero-heading {
@@ -197,12 +192,3 @@
         font-size: 2rem;
     }
 }
-
-/* .compatibility-section {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    background: url(assets/compatibilty-animated-images.png) no-repeat right center;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-} */
