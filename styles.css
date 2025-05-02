@@ -69,6 +69,49 @@
     -webkit-text-fill-color: transparent;
 }
 
+.hero-mockup-container {
+  height: 500px;
+  margin-top: 50px;
+}
+
+.mockup-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 1s ease;
+  max-height: 100%;
+}
+
+.mockup-image img {
+  height: 100%;
+  max-height: 500px;
+}
+
+.mockup-image.center {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.mockup-image.left {
+  left: 10%;
+  z-index: 1;
+  transform: translateX(-200%) scale(0.9);
+}
+
+.mockup-image.right {
+  right: 10%;
+  z-index: 1;
+  transform: translateX(200%) scale(0.9);
+}
+
+.mockup-image.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
 .button-container {
     position: relative;
     display: inline-block;
@@ -191,4 +234,23 @@
     .features-heading {
         font-size: 2rem;
     }
+}
+
+@media (max-width: 768px) {
+  .mockup-image.left,
+  .mockup-image.right {
+    display: none;
+  }
+
+  .mockup-image.center {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-mockup-container {
+    height: auto;
+  }
 }
