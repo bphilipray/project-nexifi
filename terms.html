@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      margin: 1rem;
-      padding: 1rem;
       background: linear-gradient(90deg, #9466FF 0%, #5548FE 100%);
-      font-family: Arial, sans-serif;
       color: white;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     
     .container {
@@ -23,8 +23,8 @@
       margin: auto;
     }
 
-    h1 {
-      text-align: center;
+    .terms {
+      text-align: left;
     }
 
     .btn-home {
@@ -44,7 +44,7 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="terms">
     <h1>Terms and Conditions</h1>
     <section>
       <h2>1. Introduction</h2>
@@ -67,7 +67,7 @@
       <p>We reserve the right to revise these terms at any time.</p>
     </section>
 
-    <div>
+    <div class="my-5">
       <a href="index.html" class="btn btn-home">Back to Home</a>
     </div>
   </div>
