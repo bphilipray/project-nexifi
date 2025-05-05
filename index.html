@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded mx-3 py-1 mt-3">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="/">
           <img src="assets/nexifi-logo.png" width="70" height="70" class="me-3">
           <span class="fw-bolder" style="font-size: 2rem;">nexifi</span>
         </a>
@@ -29,9 +29,10 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
           <!-- Menu Items -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active me-3" href="#" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">About</a></li>
-            <li class="nav-item"><a class="nav-link active me-3" href="#" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Contact</a></li>
-            <li class="nav-item"><a class="nav-link active me-3" href="#" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Support</a></li>
+            <li class="nav-item"><a class="nav-link active me-3" href="/" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Home</a></li>
+            <li class="nav-item"><a class="nav-link active me-3" href="about.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">About</a></li>
+            <li class="nav-item"><a class="nav-link active me-3" href="support.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Support</a></li>
+            <li class="nav-item"><a class="nav-link active me-3" href="/contact" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Contact</a></li>
           </ul>
     
           <!-- Download Button -->
@@ -342,10 +343,10 @@
           <!-- Footer Links -->
           <div class="col-md-4 d-flex justify-content-center">
             <ul class="list-unstyled me-5">
-                <li class="mb-3"><a href="#" class="text-decoration-none" style="color: #8A64D9;">About</a></li>
-                <li class="mb-3"><a href="#" class="text-decoration-none" style="color: #8A64D9;">Downloads</a></li>
-                <li class="mb-3"><a href="404.html" class="text-decoration-none" style="color: #8A64D9;">404 Page</a></li>
-                <li class="mb-3"><a href="#" class="text-decoration-none" style="color: #8A64D9;">Support</a></li>
+                <li class="mb-3"><a href="/" class="text-decoration-none" style="color: #8A64D9;">Home</a></li>
+                <li class="mb-3"><a href="about.html" class="text-decoration-none" style="color: #8A64D9;">About</a></li>
+                <li class="mb-3"><a href="support.html" class="text-decoration-none" style="color: #8A64D9;">Support</a></li>
+                <li class="mb-3"><a href="downloads.html" class="text-decoration-none" style="color: #8A64D9;">Downloads</a></li>
             </ul>
           </div>
           <!-- Footer Links (Right Column) 
@@ -413,6 +414,22 @@
         // Slide in left and right after center
         setTimeout(() => left.classList.add('active'), 1000);
         setTimeout(() => right.classList.add('active'), 1200);
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll('a').forEach(link => {
+        const availablePaths = ['/', '/about.html', '/support.html', '/terms.html', '/privacy.html']; // your real pages
+
+        link.addEventListener('click', function(e) {
+          const url = new URL(link.href, window.location.origin);
+          const path = url.pathname;
+
+          if (!availablePaths.includes(path)) {
+            e.preventDefault();
+            window.location.href = '/404.html';
+          }
+        });
       });
     </script>
     
