@@ -10,6 +10,10 @@
   .navbar-nav {
     text-align: right;
   }
+
+  .download {
+    align-items: center;
+  }
   
   .navbar-nav .nav-item {
     margin-left: 1rem;
