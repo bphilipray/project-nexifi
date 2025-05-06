@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(180deg, #f9f8ff 0%, #f1f1ff 100%);
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .center-box {
+      max-width: 800px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .btn-download {
+      display: block;
+      margin: 1rem auto;
+      background-color: #6D52FD;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background-color: #573ed0;
+    }
+
+    .back-btn {
+      margin-top: 2rem;
+      display: inline-block;
+      background-color: #6D52FD;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #573ed0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <header>
+    <!-- Include your existing navbar here -->
+  </header>
+
+  <main>
+    <div class="center-box">
+      <h1 class="features-heading">Download</h1>
+      <p>Download our latest tools and updates. Choose your platform:</p>
+      <a href="assets/your-software.exe" class="btn-download" download>Download for Windows</a>
+      <a href="assets/your-software.dmg" class="btn-download" download>Download for macOS</a>
+      <a href="assets/your-software.apk" class="btn-download" download>Download for Android</a>
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Include your footer here -->
+  </footer>
+</body>
+</html>

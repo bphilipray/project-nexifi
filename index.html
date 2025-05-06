@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link active me-3" href="about.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">About</a></li>
             <li class="nav-item"><a class="nav-link active me-3" href="support.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Support</a></li>
             <li class="nav-item"><a class="nav-link active me-3" href="/contact" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Contact</a></li>
-            <li><a class="border rounded fw-bold text-white px-5 py-3" href="#" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(90deg, #5548fe 0%, #9466ff 100%);">Download Software</a></li>
+            <li><a class="border rounded fw-bold text-white px-5 py-3" href="downloads.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(90deg, #5548fe 0%, #9466ff 100%);">Download Software</a></li>
           </ul>
         </div>
       </div>
@@ -413,7 +413,7 @@
 
     <script>
       document.querySelectorAll('a').forEach(link => {
-        const availablePaths = ['/', '/about.html', '/support.html', '/terms.html', '/privacy.html']; // your real pages
+        const availablePaths = ['/', '/about.html', '/downloads.html', '/terms.html', '/privacy.html']; // your real pages
 
         link.addEventListener('click', function(e) {
           const url = new URL(link.href, window.location.origin);
