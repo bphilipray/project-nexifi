@@ -15,30 +15,105 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    .center-box {
-      max-width: 800px;
-      margin: 5rem auto;
-      padding: 2rem;
+    .about-hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #2f2f47;
+    }
+
+    .about-hero p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.125rem;
+      color: #5f5f80;
+    }
+
+    .learn-more-btn {
+      background: #6D52FD;
+      padding: 1rem 2rem;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .story-section,
+    .belief-section,
+    .team-section,
+    .cta-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .belief-cards, .team-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .belief-card,
+    .team-card {
       background: white;
       border-radius: 16px;
-      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      flex: 1 1 300px;
       text-align: center;
     }
 
-    .back-btn {
-      margin-top: 2rem;
-      display: inline-block;
-      background-color: #6D52FD;
+    .belief-card h3 {
+      color: #6D52FD;
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section {
+      background: #eae7ff;
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-btn {
+      margin-top: 1.5rem;
+      background: #6D52FD;
+      padding: 1rem 2rem;
       color: white;
-      padding: 0.75rem 1.5rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
 
-    .back-btn:hover {
-      background-color: #573ed0;
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 2rem;
+      }
+
+      .belief-cards,
+      .team-cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -74,21 +149,73 @@
     <!-- Include your existing navbar here -->
   </header>
 
-  <main>
-    <div class="center-box">
-      <h1 class="features-heading">About Us</h1>
-      <p>
-        Nexifi is a next-generation WiFi hotspot solution —lightweight, fast, and built for stability. Powering seamless connectivity for businesses and communities.
-      </p>
-      <p>
-        We are a passionate team building clean, useful, and modern digital tools for everyone. Our goal is to make technology accessible, helpful, and beautiful.
-      </p>
-      <p>
-        Thank you for supporting us!
-      </p>
-      <a href="index.html" class="back-btn">← Back to Home</a>
+  <!-- HERO SECTION -->
+  <section class="about-hero">
+    <h1>Hello, we are Nexifi</h1>
+    <p>
+      From the creators of Adopisoft, here comes nexifi – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
+    </p>
+    <a class="learn-more-btn" href="#story">Learn More</a>
+  </section>
+
+
+  <!-- STORY SECTION -->
+  <section id="story" class="story-section">
+    <h2 class="features-heading">Our journey, from Adopisoft to Nexifi</h2>
+    <p class="text-center">Nexifi is the evolution of the traditional piso wifi model—designed for modern entrepreneurs and future-ready connectivity.</p>
+    <!-- You can add a tabbed interface or keep it simple with a single story -->
+  </section>
+
+
+  <!-- BELIEF SECTION -->
+  <section class="belief-section">
+    <h2 class="features-heading">The core beliefs that drive everything we build and do</h2>
+    <div class="belief-cards">
+      <div class="belief-card">
+        <h3>Empowered Entrepreneurship</h3>
+        <p>Helping every hotspot owner transform connectivity into income through better tools.</p>
+      </div>
+      <div class="belief-card">
+        <h3>Future-Driven Innovation</h3>
+        <p>Smart integrations and scalable systems that stay ahead of the curve.</p>
+      </div>
+      <div class="belief-card">
+        <h3>Community-Centered Connectivity</h3>
+        <p>Creating access and bridging digital divides through localized, inclusive tech.</p>
+      </div>
     </div>
-  </main>
+  </section>
+
+
+  <!-- TEAM SECTION -->
+  <section class="team-section">
+    <h2 class="features-heading">We’re shaping the future of digital access in the Philippines</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="assets/team1.jpg" alt="Charles Robert Manatad">
+        <h4>Charles Robert Manatad</h4>
+        <p>Development Lead, Go Expert</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/team2.jpg" alt="Madiel Gallego">
+        <h4>Madiel Gallego</h4>
+        <p>Business Development Manager</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/team3.jpg" alt="Jean Alquisar">
+        <h4>Jean Alquisar</h4>
+        <p>Full Stack Developer</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <h2>Ready to Turn Connectivity Into Opportunity?</h2>
+    <p>Join a growing network of modern entrepreneurs redefining how the Philippines connects.</p>
+    <a class="cta-btn" href="#">Become a partner</a>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-light py-5">
