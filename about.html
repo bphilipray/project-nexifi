@@ -21,16 +21,26 @@
     }
 
     .about-hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      font-size: 4rem;
+      font-weight: bolder;
       color: #2f2f47;
     }
 
     .about-hero p {
-      max-width: 800px;
-      margin: 1rem auto;
-      font-size: 1.125rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
       color: #5f5f80;
+    }
+
+    .hero-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10rem;
+      margin: 2rem 0;
     }
 
     .learn-more-btn {
@@ -44,6 +54,14 @@
       margin-top: 1.5rem;
     }
 
+    .hero-bg {
+      background-color: #D0BEF5;
+      background-image: url('assets/flares.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
     .story-section,
     .belief-section,
     .team-section,
@@ -51,6 +69,35 @@
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 1rem;
+    }
+
+    .story-section {
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        text-align: start;
+      }
+
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        max-width: 900px;
+      }
+    }
+
+    .belief-section {
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        text-align: start;
+        max-width: 600px;
+      }
+
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        max-width:700px;
+      }
     }
 
     .belief-cards, .team-cards {
@@ -118,6 +165,9 @@
   </style>
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <!-- Include your existing navbar here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded mx-3 py-1 mt-3">
         <div class="container-fluid">
           <!-- Logo -->
@@ -145,28 +195,27 @@
           </div>
         </div>
       </nav>
-  <header>
-    <!-- Include your existing navbar here -->
   </header>
 
   <!-- HERO SECTION -->
-  <section class="about-hero">
+  <section class="about-hero hero-bg">
     <h1>Hello, we are Nexifi</h1>
     <p>
       From the creators of Adopisoft, here comes nexifi – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
     </p>
-      <a href="#">
-        <img src="assets/ado logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
-        <img src="assets/nexifi-logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
-      </a>
+    <div class="hero-logos">
+      <img src="assets/ado logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
+      <img src="assets/nexifi logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
+    </div>
     <a class="learn-more-btn" href="#story">Learn More</a>
   </section>
 
 
   <!-- STORY SECTION -->
   <section id="story" class="story-section">
-    <h2 class="features-heading">Our journey, from Adopisoft to Nexifi</h2>
-    <p class="text-center">Nexifi is the evolution of the traditional piso wifi model—designed for modern entrepreneurs and future-ready connectivity.</p>
+    <h2 class="features-heading">Our journey,<br> from Adopisoft to Nexifi</h2>
+    <p class="text-start">From pioneering piso wifi to powering the future of connectivity and digital services 
+      income opportunities. </p>
     <!-- You can add a tabbed interface or keep it simple with a single story -->
   </section>
 
@@ -174,6 +223,8 @@
   <!-- BELIEF SECTION -->
   <section class="belief-section">
     <h2 class="features-heading">The core beliefs that drive everything we build and do</h2>
+    <p class="text-start">From pioneering piso wifi to powering the future of connectivity
+      and digital services income opportunities. </p>
     <div class="belief-cards">
       <div class="belief-card">
         <h3>Empowered Entrepreneurship</h3>
