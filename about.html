@@ -28,7 +28,7 @@
     }
 
     .about-hero p {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.5rem;
@@ -36,11 +36,11 @@
       color: #7471A6;
     }
 
-    .adopisoft {
+    .about-hero .adopisoft {
       color: #80005E;
     }
 
-    .nexifi {
+    .about-hero .nexifi {
       color: #6D52FD;
     }
 
@@ -104,17 +104,44 @@
       padding: 0 1rem;
     }
 
+    .story-label {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #8A64D9;
+      background: #EEE6FF;
+      border: 2px solid #D0BEF5;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
     .story-section {
-      h2 {
+      .first-line {
         font-family: 'Poppins', sans-serif;
+        color: #171443;
         font-size: 2.5rem;
+        font-weight: 700;
         text-align: start;
       }
 
-      p {
+      .second-line {
         font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: start;
+        background: linear-gradient(90deg, #9465FF 0%, #F13A8A 78%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .description {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25em;
         max-width: 900px;
+        margin-top: 1rem;
       }
     }
 
@@ -239,9 +266,13 @@
       From the creators of <span class="adopisoft">Adopisoft</span>, here comes <span class="nexifi">Nexifi</span> – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
     </p>
     <div class="hero-logos">
-      <img src="assets/ado logo.png" alt="ado-logo" class="hero-logo">
+      <a href="https://www.adopisoft.com/">
+        <img src="assets/ado logo.png" alt="ado-logo" class="hero-logo">
+      </a>
       <div class="moving-line"></div>
-      <img src="assets/nexifi logo.png" alt="nexifi-logo" class="hero-logo">
+      <a href="/">
+        <img src="assets/nexifi logo.png" alt="nexifi-logo" class="hero-logo">
+      </a>
     </div>
     <a class="learn-more-btn" href="#story">Learn More</a>
   </section>
@@ -249,10 +280,51 @@
 
   <!-- STORY SECTION -->
   <section id="story" class="story-section">
-    <h2 class="features-heading">Our journey,<br> from Adopisoft to Nexifi</h2>
-    <p class="text-start">From pioneering piso wifi to powering the future of connectivity and digital services 
+    <p class="story-label">Our Story</p>
+    <h2><span class="first-line">Our journey,</span><br> <span class="second-line">from Adopisoft to Nexifi</span></h2>
+    <p class="description">From pioneering piso wifi to powering the future of connectivity and digital services 
       income opportunities. </p>
     <!-- You can add a tabbed interface or keep it simple with a single story -->
+    <!-- Tab Nav -->
+    <div class="row my-5">
+      <div class="col-md-6">
+        <ul class="nav nav-tabs justify-content-center rounded-pill bg-light mb-4" id="aboutTabs" role="tablist">
+          <li class="nav-item d-flex align-items-center justify-content-between" role="presentation">
+            <img src="assets/ado logo.png" alt="Ado Logo" class="img-fluid" width="30px" height="30px">
+            <button class="nav-link text-uppercase fw-bold" style="font-size: 1.25rem; color: #171443;" id="adopisoft-tab" data-bs-toggle="tab" data-bs-target="#adopisoft" type="button" role="tab">Adopisoft</button>
+          </li>
+          <li class="nav-item d-flex align-items-center justify-content-between" role="presentation">
+            <img src="assets/nexifi logo.png" alt="Nexifi Logo" class="img-fluid" width="30px" height="30px">
+            <button class="nav-link text-uppercase fw-bold active" style="font-size: 1.25rem; color: #6A50FD;" id="nexifi-tab" data-bs-toggle="tab" data-bs-target="#nexifi" type="button" role="tab">Nexifi</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase fw-bold" style="font-size: 1.25rem; color: #171443;" id="future-tab" data-bs-toggle="tab" data-bs-target="#future" type="button" role="tab">The Future</button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content my-5">
+          <div class="tab-pane fade" id="adopisoft" role="tabpanel">
+            <h3><strong>Adopisoft : Our Beginning</strong></h3>
+            <p>Adopisoft pioneered the Piso WiFi system in the Philippines...</p>
+          </div>
+          <div class="tab-pane fade show active" id="nexifi" role="tabpanel">
+            <h4><strong>Nexifi : Where we are now</strong></h4>
+            <p class="mt-4">Nexifi is the evolution of the traditional Piso WiFi model—designed for modern entrepreneurs, communities, and tech-savvy users who seek more than just connectivity. Born from the legacy of Adopisoft, the pioneering Piso WiFi system in the Philippines, Nexifi redefines what's possible with hotspot technology.</p>
+            <p class="my-5">With Nexifi, you don’t just offer internet access—you unlock multiple income streams. From ad revenue sharing and digital services to smart system integrations and future-ready features, Nexifi empowers hotspot owners to scale their earnings beyond coin-based sessions</p>
+          </div>
+          <div class="tab-pane fade" id="future" role="tabpanel">
+            <h3><strong>The Future : What's Next</strong></h3>
+            <p>We envision a fully integrated income ecosystem with...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-5 offset-md-1">
+        <img src="assets/story-img.png" alt="Nexifi Story" class="img-fluid rounded-4">
+      </div>
+    </div>
   </section>
 
 
