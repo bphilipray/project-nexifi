@@ -48,8 +48,32 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10rem;
+      gap: 2rem;
       margin: 2rem 0;
+      position: relative;
+    }
+
+    .hero-logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .moving-line {
+      width: 100px;
+      height: 2px;
+      background: repeating-linear-gradient(90deg, #E9E8FF 0%, #6F53FD 49%, #E8E6FF 100%, transparent 10px, transparent 20px);
+      position: relative;
+      animation: move-line 2s infinite linear;
+    }
+
+    @keyframes move-line {
+      0% {
+        background-position: center;
+      }
+      100% {
+        background-position: 100px;
+      }
     }
 
     .learn-more-btn {
@@ -215,8 +239,9 @@
       From the creators of <span class="adopisoft">Adopisoft</span>, here comes <span class="nexifi">Nexifi</span> – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
     </p>
     <div class="hero-logos">
-      <img src="assets/ado logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
-      <img src="assets/nexifi logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
+      <img src="assets/ado logo.png" alt="ado-logo" class="hero-logo">
+      <div class="moving-line"></div>
+      <img src="assets/nexifi logo.png" alt="nexifi-logo" class="hero-logo">
     </div>
     <a class="learn-more-btn" href="#story">Learn More</a>
   </section>
