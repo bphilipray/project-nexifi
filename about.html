@@ -145,19 +145,37 @@
       }
     }
 
-    .belief-section {
-      h2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 2.5rem;
-        text-align: start;
-        max-width: 600px;
-      }
+    /* General tab style */
+    .nav-tabs .nav-link {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      border: none;
+      border-radius: 2rem;
+      color: #aaa;
+      opacity: 0.2;
+      transition: all 0.3s ease;
+    }
 
-      p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
-        max-width:700px;
-      }
+    /* Active tab style */
+    .nav-tabs .nav-link.active {
+      background-color: #fff;
+      color: #fff;
+      opacity: 1;
+    }
+
+    /* Tab icon base style */
+    .tab-icon {
+      width: 24px;
+      height: 24px;
+      opacity: 0.4;
+      transition: opacity 0.3s, filter 0.3s;
+    }
+
+    /* Icon in active tab */
+    .nav-link.active .tab-icon {
+      opacity: 1;
+      filter: brightness(0) invert(1); /* makes icon white for contrast */
     }
 
     .belief-cards, .team-cards {
@@ -284,21 +302,28 @@
     <h2><span class="first-line">Our journey,</span><br> <span class="second-line">from Adopisoft to Nexifi</span></h2>
     <p class="description">From pioneering piso wifi to powering the future of connectivity and digital services 
       income opportunities. </p>
-    <!-- You can add a tabbed interface or keep it simple with a single story -->
+
     <!-- Tab Nav -->
     <div class="row my-5">
       <div class="col-md-6">
         <ul class="nav nav-tabs justify-content-center rounded-pill bg-light mb-4" id="aboutTabs" role="tablist">
           <li class="nav-item d-flex align-items-center justify-content-between" role="presentation">
-            <img src="assets/ado logo.png" alt="Ado Logo" class="img-fluid" width="30px" height="30px">
-            <button class="nav-link text-uppercase fw-bold" style="font-size: 1.25rem; color: #171443;" id="adopisoft-tab" data-bs-toggle="tab" data-bs-target="#adopisoft" type="button" role="tab">Adopisoft</button>
+            <button class="nav-link text-uppercase" style="font-size: 1.25rem; font-weight: 600; color: #171443;" id="adopisoft-tab" data-bs-toggle="tab" data-bs-target="#adopisoft" type="button" role="tab">
+              <img src="assets/ado logo.png" alt="Ado Logo" class="img-fluid me-2" width="40px" height="40px">
+              Adopisoft
+            </button>
           </li>
           <li class="nav-item d-flex align-items-center justify-content-between" role="presentation">
-            <img src="assets/nexifi logo.png" alt="Nexifi Logo" class="img-fluid" width="30px" height="30px">
-            <button class="nav-link text-uppercase fw-bold active" style="font-size: 1.25rem; color: #6A50FD;" id="nexifi-tab" data-bs-toggle="tab" data-bs-target="#nexifi" type="button" role="tab">Nexifi</button>
+            <button class="nav-link text-uppercase active" style="font-size: 1.25rem; font-weight: 600; color: #6A50FD;" id="nexifi-tab" data-bs-toggle="tab" data-bs-target="#nexifi" type="button" role="tab">
+              <img src="assets/nexifi logo.png" alt="Nexifi Logo" class="img-fluid me-2" width="40px" height="40px">
+              Nexifi
+            </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase fw-bold" style="font-size: 1.25rem; color: #171443;" id="future-tab" data-bs-toggle="tab" data-bs-target="#future" type="button" role="tab">The Future</button>
+            <button class="nav-link text-uppercase" style="font-size: 1.25rem; font-weight: 600; color: #171443;" id="future-tab" data-bs-toggle="tab" data-bs-target="#future" type="button" role="tab">
+              <img src="assets/arrow logo.png" alt="Arrow Logo" class="img-fluid me-2" width="40px" height="40px">
+              The Future
+            </button>
           </li>
         </ul>
 
@@ -329,10 +354,10 @@
 
 
   <!-- BELIEF SECTION -->
-  <section class="belief-section">
-    <h2 class="features-heading">The core beliefs that drive everything we build and do</h2>
-    <p class="text-start">From pioneering piso wifi to powering the future of connectivity
-      and digital services income opportunities. </p>
+  <section class="story-section">
+    <p class="story-label">Core Values</p>
+    <h2><span class="first-line">The core beliefs that drive</span><br> <span class="second-line">everything we build and do</span></h2>
+    <p class="desciption">From pioneering piso wifi to powering the future of connectivity<br> and digital services income opportunities. </p>
     <div class="belief-cards">
       <div class="belief-card">
         <h3>Empowered Entrepreneurship</h3>
