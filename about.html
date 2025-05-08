@@ -24,7 +24,7 @@
       font-family: 'Poppins', sans-serif;
       font-size: 4rem;
       font-weight: bolder;
-      color: #2f2f47;
+      color: #171443;
     }
 
     .about-hero p {
@@ -32,7 +32,16 @@
       margin: 2rem auto;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.5rem;
-      color: #5f5f80;
+      font-weight: bold;
+      color: #7471A6;
+    }
+
+    .adopisoft {
+      color: #80005E;
+    }
+
+    .nexifi {
+      color: #6D52FD;
     }
 
     .hero-logos {
@@ -55,7 +64,7 @@
     }
 
     .hero-bg {
-      background-color: #D0BEF5;
+      background-color: #EEE6FF;
       background-image: url('assets/flares.png');
       background-repeat: no-repeat;
       background-position: center center;
@@ -166,42 +175,44 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <header>
-    <!-- Include your existing navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded mx-3 py-1 mt-3">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="assets/nexifi-logo.png" width="70" height="70" class="me-3">
-            <span class="fw-bolder" style="font-size: 2rem;">nexifi</span>
-          </a>
-      
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Collapsible Content -->
-          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <!-- Menu Items -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active me-3" href="/" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Home</a></li>
-              <li class="nav-item"><a class="nav-link active me-3" href="about.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">About</a></li>
-              <li class="nav-item"><a class="nav-link active me-3" href="support.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Support</a></li>
-              <li class="nav-item"><a class="nav-link active me-3" href="/contact" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Contact</a></li>
-              <li><a class="border rounded fw-bold text-white px-5 py-3" href="downloads.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(90deg, #5548fe 0%, #9466ff 100%);">Download Software</a></li>
-            </ul>
+  <div class="hero-bg py-3">
+    <header>
+      <!-- Include your existing navbar here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border rounded mx-3 py-1">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/">
+              <img src="assets/nexifi-logo.png" width="70" height="70" class="me-3">
+              <span class="fw-bolder" style="font-size: 2rem;">nexifi</span>
+            </a>
+        
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <!-- Menu Items -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active me-3" href="/" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Home</a></li>
+                <li class="nav-item"><a class="nav-link active me-3" href="about.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">About</a></li>
+                <li class="nav-item"><a class="nav-link active me-3" href="support.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Support</a></li>
+                <li class="nav-item"><a class="nav-link active me-3" href="/contact" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif;">Contact</a></li>
+                <li><a class="border rounded fw-bold text-white px-5 py-3" href="downloads.html" style="font-size: 1.125rem; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(90deg, #5548fe 0%, #9466ff 100%);">Download Software</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-  </header>
+        </nav>
+    </header>
+  </div>
 
   <!-- HERO SECTION -->
   <section class="about-hero hero-bg">
     <h1>Hello, we are Nexifi</h1>
     <p>
-      From the creators of Adopisoft, here comes nexifi – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
+      From the creators of <span class="adopisoft">Adopisoft</span>, here comes <span class="nexifi">Nexifi</span> – a new and improved wifi hotspot solution with income streams beyond traditional piso wifi.
     </p>
     <div class="hero-logos">
       <img src="assets/ado logo.png" alt="ado-logo" class="img-fluid me-2" width="100px" height="100px">
