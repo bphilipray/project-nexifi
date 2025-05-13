@@ -178,16 +178,8 @@
       filter: brightness(0) invert(1); /* makes icon white for contrast */
     }
 
-    .belief-cards, .team-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-
-    .belief-card,
     .team-card {
-      background: white;
+      background: radial-gradient(#f5f5f5, #ffffff);
       border-radius: 16px;
       box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
       padding: 2rem;
@@ -195,49 +187,24 @@
       text-align: center;
     }
 
-    .belief-card {
-      h6 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.125rem;
-        font-weight: bold;
-        color: #000;
-        text-align: start;
-        margin: 0 0 1rem;
+    .team-card {
+      h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        color: #171443;
       }
-
       p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        color: #7471A6;
-        text-align: start;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        color: #9E9DA8;
       }
-    }
-
-    .belief-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .icon-wrapper {
-      width: 100px;
-      height: 100px;
-      border-radius: 16px;
-      display: flex;
-      align-items: start;
-      justify-content: start;
     }
 
     .values-icons {
         width: 100px;
         height: 100px;
       }
-
-    .team-card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
 
     .cta-section {
       background: #eae7ff;
@@ -266,7 +233,6 @@
         font-size: 2rem;
       }
 
-      .belief-cards,
       .team-cards {
         flex-direction: column;
         align-items: center;
@@ -440,24 +406,24 @@
       <!-- Carousel Items -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="team-card text-center">
-            <img src="assets/team1.jpg" alt="Charles Robert Manatad" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="team-card text-center border p-4 rounded" style="width: 300px; margin: auto;">
             <h4>Charles Robert Manatad</h4>
             <p>Development Lead, Go Expert</p>
+            <img src="assets/charles.png" alt="Charles Robert Manatad" class="mb-3" style="width: 100%; height: auto; object-fit: cover;">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="team-card text-center">
-            <img src="assets/team2.jpg" alt="Madiel Gallego" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="team-card text-center border p-4 rounded" style="width: 300px; margin: auto;">
             <h4>Madiel Gallego</h4>
             <p>Business Development Manager</p>
+            <img src="assets/madel.png" alt="Madiel Gallego" class="mb-3" style="width: 100%; height: auto; object-fit: cover;">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="team-card text-center">
-            <img src="assets/team3.jpg" alt="Jean Alquisar" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <div class="team-card text-center border p-4 rounded" style="width: 300px; margin: auto;">
             <h4>Jean Alquisar</h4>
             <p>Full Stack Developer</p>
+            <img src="assets/jean.png" alt="Jean Alquisar" class="mb-3" style="width: 100%; height: auto; object-fit: cover;">
           </div>
         </div>
       </div>
