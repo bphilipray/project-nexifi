@@ -201,28 +201,34 @@
       }
     }
 
-    .values-icons {
-        width: 100px;
-        height: 100px;
-      }
-
     .cta-section {
-      background: #eae7ff;
-      border-radius: 16px;
-      padding: 3rem 2rem;
-      text-align: center;
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: start;
+      }
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.563rem;
+        color: #fff;
+        text-align: start;
+      }
     }
 
-    .cta-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .cta-overlay {
+      background: url("assets/multiple income highlights 4.png") center center no-repeat;
+      background-size: contain;
+      height: 100%;
+      position: relative;
     }
 
     .cta-btn {
       margin-top: 1.5rem;
-      background: #6D52FD;
-      padding: 1rem 2rem;
-      color: white;
+      background: #fff;
+      padding: 1rem 4rem;
+      color: #7259FE;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -231,11 +237,6 @@
     @media (max-width: 768px) {
       .about-hero h1 {
         font-size: 2rem;
-      }
-
-      .team-cards {
-        flex-direction: column;
-        align-items: center;
       }
     }
   </style>
@@ -442,10 +443,24 @@
 
 
   <!-- CTA SECTION -->
-  <section class="cta-section">
-    <h2>Ready to Turn Connectivity Into Opportunity?</h2>
-    <p>Join a growing network of modern entrepreneurs redefining how the Philippines connects.</p>
-    <a class="cta-btn" href="#">Become a partner</a>
+  <section>
+    <div class="container my-5">
+      <div class="row income-gradient-bg align-items-center p-4 rounded">
+        <div class="col-md-6 p-0 position-relative">
+          <div class="cta-overlay d-flex align-items-center justify-content-center h-100">
+            <!-- Content Box -->
+            <div class="cta-section">
+              <h2 class="fw-bold">Ready to Turn Connectivity Into Opportunity?</h2>
+              <p>Join a growing network of modern entrepreneurs redefining how the Philippines connects.</p>
+              <a class="cta-btn" href="#">Become a partner</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mb-3 mb-md-0">
+          <img src="assets/pinay image 2.png" alt="Income Highlights 1" class="img-fluid" style="width: 350px; height: 500px;">
+        </div>
+      </div>   
+    </div> 
   </section>
 
   <!-- Footer -->
