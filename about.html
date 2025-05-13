@@ -213,6 +213,19 @@
       }
     }
 
+    .belief-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .icon-wrapper {
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+    }
+
     .values-icons {
         width: 100px;
         height: 100px;
@@ -377,51 +390,87 @@
     <p class="story-label">Core Values</p>
     <h2><span class="first-line">The core beliefs that drive</span><br> <span class="second-line">everything we build and do</span></h2>
     <p class="desciption">From pioneering piso wifi to powering the future of connectivity<br> and digital services income opportunities. </p>
-    <div class="belief-cards">
-      <!-- Card 1 -->
-      <div class="belief-card">
-        <img src="assets/icon 1.png" alt="Icon 1" class="img-fluid values-icons">
-        <h6>Empowered Entrepreneurship</h6>
-        <p>We believe in turning every hotspot into a sustainable source of income and impact. Nexifi equips modern entrepreneurs with powerful tools to go beyond selling internet—unlocking new digital opportunities with ease.
-        </p>
+    <!-- FS Cards -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <!--Card 1-->
+        <div class="col-md-4 mb-4">
+          <div class="fs-card p-3">
+            <img src="assets/icon 1.png" alt="Icon 1" class="fs-card-icon mt-2 mb-3">
+            <p><b>Empowered Entrepreneurship</b></p>
+            <p>We believe in turning every hotspot into a sustainable source of income and impact. Nexifi equips modern entrepreneurs with powerful tools to go beyond selling internet—unlocking new digital opportunities with ease.</p>
+          </div>
+        </div>
+        <!--Card 2-->
+        <div class="col-md-4 mb-4">
+          <div class="fs-card p-3">
+            <img src="assets/icon 2.png" alt="Icon 2" class="fs-card-icon mt-2 mb-3">
+            <p><b>Future-Driven Innovation</b></p>
+            <p>We are committed to building technology that not only works today but thrives tomorrow. By constantly evolving our system with smart integrations and scalable infrastructure, Nexifi ensures our users stay ahead of the curve.</p>
+          </div>
+        </div>
+        <!--Card 3-->
+        <div class="col-md-4 mb-4">
+          <div class="fs-card p-3">
+            <img src="assets/icon 3.png" alt="Icon 3" class="fs-card-icon mt-2 mb-3">
+            <p><b>Community-Centered Connectivity</b></p>
+            <p>Nexifi is built with people in mind—from remote barangays to bustling cities. We create accessible and inclusive tech that bridges digital gaps, fosters local growth, and connects communities to a better future.</p>
+          </div>
+        </div>
       </div>
-      <!-- Card 2 -->
-      <div class="belief-card">
-        <img src="assets/icon 2.png" alt="Icon 2" class="img-fluid values-icons">
-        <h6>Future-Driven Innovation</h6>
-        <p>We are committed to building technology that not only works today but thrives tomorrow. By constantly evolving our system with smart integrations and scalable infrastructure, Nexifi ensures our users stay ahead of the curve.
-        </p>
-      </div>
-      <!-- Card 3 -->
-      <div class="belief-card">
-        <img src="assets/icon 3.png" alt="Icon 3" class="img-fluid values-icons">
-        <h6>Community-Centered Connectivity</h6>
-        <p>Nexifi is built with people in mind—from remote barangays to bustling cities. We create accessible and inclusive tech that bridges digital gaps, fosters local growth, and connects communities to a  better future.
-        </p>
-      </div>
-    </div>
+     </div>
   </section>
 
 
   <!-- TEAM SECTION -->
-  <section class="team-section">
-    <h2 class="features-heading">We’re shaping the future of digital access in the Philippines</h2>
-    <div class="team-cards">
-      <div class="team-card">
-        <img src="assets/team1.jpg" alt="Charles Robert Manatad">
-        <h4>Charles Robert Manatad</h4>
-        <p>Development Lead, Go Expert</p>
+  <section class="story-section">
+    <p class="story-label">The Team</p>
+    <h2><span class="first-line">We’re shaping the future</span><br> <span class="second-line">of digital access in the Philippines</span></h2>
+    <p class="desciption">Behind Nexifi is a team of passionate innovators, engineers, and community builders who believe in making connectivity<br> smarter, fairer, and more rewarding.</p>
+
+    <!-- Bootstrap Carousel -->
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="team-card">
-        <img src="assets/team2.jpg" alt="Madiel Gallego">
-        <h4>Madiel Gallego</h4>
-        <p>Business Development Manager</p>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="team-card text-center">
+            <img src="assets/team1.jpg" alt="Charles Robert Manatad" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Charles Robert Manatad</h4>
+            <p>Development Lead, Go Expert</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-card text-center">
+            <img src="assets/team2.jpg" alt="Madiel Gallego" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Madiel Gallego</h4>
+            <p>Business Development Manager</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="team-card text-center">
+            <img src="assets/team3.jpg" alt="Jean Alquisar" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h4>Jean Alquisar</h4>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <img src="assets/team3.jpg" alt="Jean Alquisar">
-        <h4>Jean Alquisar</h4>
-        <p>Full Stack Developer</p>
-      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
 
