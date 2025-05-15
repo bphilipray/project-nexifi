@@ -396,19 +396,19 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
      <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const center = document.getElementById('imgCenter');
-        const left = document.getElementById('imgLeft');
-        const right = document.getElementById('imgRight');
-    
-        // Fade in center image first
-        setTimeout(() => center.classList.add('active'), 500);
-    
-        // Slide in left and right after center
-        setTimeout(() => left.classList.add('active'), 1000);
-        setTimeout(() => right.classList.add('active'), 1200);
-      });
-    </script>
+        window.addEventListener('DOMContentLoaded', () => {
+          const center = document.getElementById('imgCenter');
+          const left = document.getElementById('imgLeft');
+          const right = document.getElementById('imgRight');
+      
+          // Fade in center image first
+          setTimeout(() => center.classList.add('active'), 500);
+      
+          // Slide in left and right after center
+          setTimeout(() => left.classList.add('active'), 1000);
+          setTimeout(() => right.classList.add('active'), 1200);
+        });
+      </script>
 
     <script>
       document.querySelectorAll('a').forEach(link => {
