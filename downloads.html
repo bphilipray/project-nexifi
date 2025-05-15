@@ -15,47 +15,49 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    .center-box {
-      max-width: 800px;
-      margin: 5rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    .hero-bg {
+      background-color: #EEE6FF;
+      background-image: url('assets/flares.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .about-hero {
+      padding: 5rem 2rem;
       text-align: center;
     }
 
-    .btn-download {
-      display: block;
-      margin: 1rem auto;
-      background-color: #6D52FD;
+    .about-hero {
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4.063rem;
+        font-weight: bolder;
+        color: #171443;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.563rem;
+        color: #7471A6;
+        padding-top: 2rem;
+      }
+    }
+
+    input::placeholder {
+      color: #c4c4c4;
+    }
+
+    .btn-outline-secondary {
+      border-color: #ddd;
+      color: #6D52FD;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-secondary:hover {
+      background: linear-gradient(90deg, #5548fe 0%, #9466ff 100%);
       color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      width: fit-content;
-      transition: background 0.3s ease;
-    }
-
-    .btn-download:hover {
-      background-color: #573ed0;
-    }
-
-    .back-btn {
-      margin-top: 2rem;
-      display: inline-block;
-      background-color: #6D52FD;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .back-btn:hover {
-      background-color: #573ed0;
+      border-color: transparent;
     }
   </style>
 </head>
@@ -92,16 +94,111 @@
     </header>
   </div>
 
+
+  <!-- HERO SECTION -->
+  <section class="about-hero hero-bg">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+      <h1>Download</h1>
+      <p>Download the software image for your board. For setup diagrams and detailed configuration instructions, check out the Guide page or visit our official Nexifi YouTube channel.</p>
+    </div>
+  </section>
+
   <main>
-    <div class="center-box">
-      <h1 class="features-heading">Download</h1>
-      <p>Download our latest tools and updates. Choose your platform:</p>
-      <a href="assets/your-software.exe" class="btn-download" download>Download for Windows</a>
-      <a href="assets/your-software.dmg" class="btn-download" download>Download for macOS</a>
-      <a href="assets/your-software.apk" class="btn-download" download>Download for Android</a>
-      <a href="index.html" class="back-btn">← Back to Home</a>
+    <div class="container py-5">
+      <div class="bg-white p-4 p-md-5 rounded-4 shadow" style="max-width: 1400px; margin: 0 auto;">
+        <!-- Search Bar -->
+        <div class="mb-4">
+          <input type="text" class="form-control form-control-lg rounded-pill px-4" placeholder="Search board">
+        </div>
+
+        <!-- Downloads List -->
+        <div class="row gy-3">
+          <!-- Raspberry Pi -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="assets/raspberry-pi-logo.png" alt="Raspberry Pi" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">Raspberry Pi</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">Supported Models: Raspberry Pi 3, B+, 4, 5</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+          <!-- Orange Pi -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="assets/orange-pi-logo.png" alt="Orange Pi" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">Orange Pi One</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+
+            <div class="d-flex align-items-center">
+              <img src="assets/orange-pi-logo.png" alt="Orange Pi" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">Orange Pi PC</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+          <!-- ASUS Tinkerboard -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="assets/raspberry-pi-logo.png" alt="Raspberry Pi" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">ASUS Tinkerboard</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+          <!-- ASUS Tinkerboard -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="#" alt="ASUS" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">ASUS Tinkerboard</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+          <!-- Ubuntu Server -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="assets/ubuntu-logo.png" alt="ASUS" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">Ubuntu Server</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+          <!-- Rock 4 SE -->
+          <div class="col-12 d-flex justify-content-between align-items-center border-bottom pt-5 pb-5">
+            <div class="d-flex align-items-center">
+              <img src="#" alt="Rock" width="32" class="me-3">
+              <div>
+                <h6 class="mb-1 fw-bold">Rock 4 SE</h6>
+                <p class="mb-0 text-muted" style="font-size: 0.875rem;">...</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4">Download</a>
+          </div>
+
+        </div>
+      </div>
     </div>
   </main>
+
 
   <!-- Footer -->
   <footer class="bg-light py-5">
